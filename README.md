@@ -62,11 +62,16 @@ Other Style Guides
 
     trace(foo, bar); // => 1, 9
     ```
-  - [1.2](#1.2) <a name='1.2'></a> **Complex**: When you access a complex type you work on a reference to its value.
+  - [1.2](#1.2) <a name='1.2'></a> **Complex**: A complex value is a value that is not a primitive value, and when you access a complex type you work on a reference to its value.
 
-    + `object`
-    + `array`
-    + `function`
+    + `Object`
+    + `Array`
+    + `Date`
+    + `Error`
+    + `Function`
+    + `RegExp`
+    + `XML`
+    + `XMLList`
 
     ```actionscript
     const foo = [1, 2];
