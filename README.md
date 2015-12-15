@@ -46,21 +46,21 @@ Other Style Guides
 
 ## Types
 
-  - [1.1](#1.1) <a name='1.1'></a> **Primitives**: When you access a primitive type you work directly on its value.
+  - [1.1](#1.1) <a name='1.1'></a> **Primitives**: When you access a primitive type you work directly on its value. Typically faster than working with complex values, because ActionScript stores primitive values in a special way that makes memory and speed optimizations possible. They are stored as immutable objects means that passing by reference is effectively the same as passing by value. This cuts down on memory usage and increases execution speed, because references are usually significantly smaller than the values themselves.
 
-    + `string`
-    + `number`
-    + `boolean`
-    + `null`
-    + `undefined`
+    + `Boolean`
+    + `int`
+    + `Number`
+    + `String`
+    + `uint`
 
     ```actionscript
-    const foo = 1;
-    let bar = foo;
+    var foo = 1;
+    var bar = foo;
 
     bar = 9;
 
-    console.log(foo, bar); // => 1, 9
+    trace(foo, bar); // => 1, 9
     ```
   - [1.2](#1.2) <a name='1.2'></a> **Complex**: When you access a complex type you work on a reference to its value.
 
